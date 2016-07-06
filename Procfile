@@ -1,1 +1,1 @@
-web: npm install gulp gulp-nodemon && gulp
+web: npm install && gulp
