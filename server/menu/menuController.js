@@ -87,70 +87,10 @@ module.exports = {
     console.log('Order: JSON.stringify(req.body)=' + JSON.stringify(req.body));
     var order = req.body;
     order['username'] = 'bohee';
-    // test
-    // create = Q.nbind(User.create, User);
-    // newUser = {
-    //   username: 'username',
-    //   password: 'password'
-    // };
-    // create(newUser);
-    //
-    // var findUser = Q.nbind(User.findOne, User);
-    // findUser({username: 'username'})
-    //   .then(function (user) {
-    //     if (!user) {
-    //       next(new Error('User does not exist'));
-    //     } else {
-    //       console.log('success')
-    //     }
-    //   })
-    //   .fail(function (error) {
-    //     next(error);
-    //   });
-
-    var findAll = Q.nbind(User.find, User);
-
-    findAll({})
-      .then(function (users) {
-        console.log('all users=' + JSON.stringify(users));
-      })
-      .fail(function (error) {
-        console.log('all users: not exists')
-      });
-
-
-    // *************
-
 
     var createOrder = Q.nbind(Order.create, Order);
     var findOrder = Q.nbind(Order.findOne, Order);
-    console.log("order:",order);
-    console.log("createOrder:", createOrder);
     createOrder(order);
-
-    // var findOrder = Q.nbind(Order.findOne, Order);
-    // findOrder({username: order.username})
-    //   .then(function (order) {
-    //     if (!order) {
-    //       next(new Error('order does not exist'));
-    //     } else {
-    //       console.log('order exists');
-    //     }
-    //   })
-    //   .fail(function (error) {
-    //     next(error);
-    //   });
-
-      var findAllOrders = Q.nbind(Order.find, Order);
-
-      findAllOrders({})
-        .then(function (orders) {
-          console.log('all orders=' + JSON.stringify(orders));
-        })
-        .fail(function (error) {
-          console.log('all orders: not exists')
-        });
-    // return ret_val;
   },
 
   navToMenu: function (req, res, next) {

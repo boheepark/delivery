@@ -24,6 +24,11 @@ angular.module('delivery', [
       controller: 'MenuController',
       authenticate: true,
     })
+    .when('/status', {
+      templateUrl: 'app/status/status.html',
+      controller: 'StatusController',
+      authenticate: true,
+    })
     // .when('/shorten', {
     //   templateUrl: 'app/shorten/shorten.html',
     //   controller: 'ShortenController',

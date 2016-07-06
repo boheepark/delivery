@@ -1,17 +1,12 @@
 var mongoose = require('mongoose');
 
 var OrderSchema = new mongoose.Schema({
-  // id: {
-  //   type: Number,
-  //   required: true,
-  //   unique: true
-  // },
 
   username: {
     type: String,
     required: true
   },
-  sub_total: {
+  subtotal: {
     type: Number,
     required: true
   },
@@ -25,16 +20,14 @@ var OrderSchema = new mongoose.Schema({
   },
   ordered_date: {
     type: Date,
-    required: true,
     default: Date.now
   },
   delivery_date: {
     type: Date,
-    required: true,
     default: Date.now
   },
   items: [{
-    item_id: {
+    name: {
       type: String,
       required: true,
     },
@@ -45,11 +38,7 @@ var OrderSchema = new mongoose.Schema({
     qty: {
       type: Number,
       required: true,
-    },
-    sub_total: {
-      type: Number,
-      required: true,
-    },
+    }
   }],
 });
 

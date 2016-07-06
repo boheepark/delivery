@@ -1,6 +1,6 @@
 angular.module('delivery.menu', [])
 
-.controller('MenuController', function ($scope, Menus) {
+.controller('MenuController', function ($scope, Menus, $window) {
   $scope.data = {};
   $scope.order = {};
   // $scope.cart_items = [];
@@ -50,12 +50,13 @@ angular.module('delivery.menu', [])
     $scope.order['items'] = $scope.cart;
 
     Menus.checkout($scope.order)
-      .then(function (menus) {
-        //
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
+    .then(function (menus) {
+      console.log(menus);
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+    
   }
 
   $scope.showModal = function(item){
