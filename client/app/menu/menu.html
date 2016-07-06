@@ -1,0 +1,398 @@
+<link rel="stylesheet" type="text/css" href="../../../../styles/style2.css">
+<link rel="stylesheet" type="text/css" href="../../../../styles/ng-modal-style.css">
+
+<div id="users-contain" class="ui-widget">
+  <div id="header">
+    <h1>Aura Thai Kitchen</h1>
+    <p>210 Main St, Fort Lee, NJ 07024</p>
+  </div>
+  <br>
+  <div id="container">
+      <div id="first_col">
+          <div>
+              <h2>Appetizers</h2>
+              <div class="menu" ng-repeat="item in data.menu['Appetizers']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Soup</h2>
+              <div class="menu" ng-repeat="item in data.menu['Soup']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Noodle Soup</h2>
+              <div class="menu" ng-repeat="item in data.menu['Noodle Soup']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Salad</h2>
+              <div class="menu" ng-repeat="item in data.menu['Salad']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Sauteed</h2>
+              <div class="menu" ng-repeat="item in data.menu['Sauteed']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Curry</h2>
+              <div class="menu" ng-repeat="item in data.menu['Curry']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Meat and Poultry</h2>
+              <div class="menu" ng-repeat="item in data.menu['Meat and Poultry']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Seafood</h2>
+              <div class="menu" ng-repeat="item in data.menu['Seafood']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Fish</h2>
+              <div class="menu" ng-repeat="item in data.menu['Fish']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Noodles</h2>
+              <div class="menu" ng-repeat="item in data.menu['Noodles']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Fried Rice</h2>
+              <div class="menu" ng-repeat="item in data.menu['Fried Rice']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Side Orders</h2>
+              <div class="menu" ng-repeat="item in data.menu['Side Orders']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Drinks</h2>
+              <div class="menu" ng-repeat="item in data.menu['Drinks']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Noodles Lunch Special</h2>
+              <div class="menu" ng-repeat="item in data.menu['Noodles Lunch Special']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Sauteed Lunch Special</h2>
+              <div class="menu" ng-repeat="item in data.menu['Sauteed Lunch Special']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Curry Lunch Special</h2>
+              <div class="menu" ng-repeat="item in data.menu['Curry Lunch Special']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Fried Rice Lunch Special</h2>
+              <div class="menu" ng-repeat="item in data.menu['Fried Rice Lunch Special']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <h2>Dessert</h2>
+              <div class="menu" ng-repeat="item in data.menu['Dessert']">
+                  <img src="assets/redirect_icon.png" ng-click="showModal(item)">
+                  <div class="info">
+                      <div class="title">
+                          {{ item.name }}
+                      </div>
+                      <div class="desc">
+                          {{ item.desc }}
+                      </div>
+                      <div class="price">
+                          {{ item.price | currency }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- end of first_col -->
+
+
+      <div id="second_col">
+          <h2>Your Order</h2>
+          <table id="checkout" class="ui-widget ui-widget-content">
+              <thead>
+                  <tr class="ui-widget-header " valign="top">
+                      <th>ITEM</th>
+                      <th>PRICE</th>
+                      <th>QTY</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr ng-repeat="item in cart track by $index">
+                      <td>{{ item.name }}</td>
+                      <td>{{ item.price | currency }}</td>
+                      <td>{{ item.qty }}</td>
+                      <td>
+                          <button ng-click="cartEditBtnCallback($index)">Edit</button>
+                      </td>
+                      <td>
+                          <button ng-click="removeItem($index)">Delete</button>
+                      </td>
+                  </tr>
+
+                  <!--<tr>-->
+                  <!--<td align="right">{{ item.qty }}</td>-->
+                  <!--<td align="right">{{ item.desc }}</td>-->
+                  <!--<td align="right">{{ item.price }}</td>-->
+                  <!--<td align="right">{{ item.subtotal }}</td>-->
+                  <!--<td align='right'><a href='http://localhost:8000/laundry/shopping_cart_edit?order_item_idx={{ forloop.counter0 }}'>Edit</a>-->
+                  <!--<td align='right'><a href='http://localhost:8000/laundry/shopping_cart_delete?order_item_idx={{ forloop.counter0 }}'>Delete</a>-->
+                  <!--</tr>-->
+              </tbody>
+          </table>
+
+
+          <table id="total" class="ui-widget ui-widget-content">
+              <tbody>
+                  <tr>
+                      <td>Sub Total</td>
+                      <td align='right'>
+                          <label id="sub_total_amt">{{ order.subtotal | currency }}</label>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Tax</td>
+                      <td align='right'>
+                          <label id="tax_amt">{{ order.tax | currency }}</label>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Total</td>
+                      <td align='right'>
+                          <label id="total_amt">{{order.total | currency }}</label>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+
+          <button id="checkout_button" ng-click="checkoutBtnCallback()">Check Out</button>
+      </div>
+      <!-- end of second_col -->
+  </div>
+  <!-- end of container -->
+</div>
+  <!-- end of users-contain -->
+<modal-dialog show='modalShown' width='750px' height='70%'>
+  <h1>{{ item.title }}</h1>
+  <h2>{{ item.desc }}</h2>
+  <h2>{{ item.price | currency }}</h2>
+  <h3>Special Instructions</h3>
+  <input type="text" ng-model="item.instructions">
+  <h3>Quantity</h3>
+  <input type="text" value="1" maxlength="3" ng-model="item.qty" required>
+
+  <button type="button" name="add" ng-click="addItem()">Add</button>
+
+</modal-dialog>
