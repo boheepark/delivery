@@ -42,5 +42,8 @@
     "passport-local": "^1.0.0",
     "q": "^1.0.1",
     "request": "^2.36.0"
+  },
+  "engines": {
+    "node": "4.4.7"
   }
 }
